@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@200;300;400;500&display=swap');
+
+@theme {
+  --font-serif-tc: "Noto Serif TC", serif;
+  --font-sans-tc: "Noto Sans TC", sans-serif;
+  --font-brand: "Cormorant Garamond", serif;
+  --font-jost: "Jost", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-jost text-[#3f3a36] bg-[#fcfaf8] antialiased;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+  }
+}
+
+.serif { font-family: 'Cormorant Garamond', 'Noto Serif TC', serif; }
+.brand-font { font-family: 'Cormorant Garamond', serif; }
+
+.gold-border { border-color: #d4c5b9; }
+.gradient-bg { background: linear-gradient(180deg, #fdfaf7 0%, #ffffff 100%); }
+.accent-color { color: #A39180; }
+.bg-accent { background-color: #A39180; }
+
+.term-box {
+  background-color: #ffffff;
+  border: 1px solid #f0e8e1;
+  transition: all 0.3s ease;
+}
+
+.term-box:hover {
+  border-color: #d4c5b9;
+  box-shadow: 0 4px 20px rgba(163, 145, 128, 0.08);
+}
+
+.signature-pad { 
+  background-color: #fff; 
+  touch-action: none; 
+  cursor: crosshair; 
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d4c5b9; border-radius: 10px; }
